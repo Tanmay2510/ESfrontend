@@ -1,3 +1,4 @@
+'use-client'
 import { Inter } from 'next/font/google'
 import Nav from '@/component/nav/Nav'
 import US from '@/component/uppserSideSection/US'

@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Shantell+Sans&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+.UpperSection{
+  background-image: url("../assets/images/landd.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  padding-top: 5px;
+  min-height: 60vw;
+  height: auto;
+}
+body{
+    margin:0;
+    background-color:#F8FFF2;
+}
+.rSlide{
+  width: 900px;
+  display: flex;
+
+}
+
+.rSlide:before,
+.rSlide:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  top: 0;
+  height: 100%;
+  pointer-events: none; /*makes the linkes behind clickable.*/
+ }
+.rSlide:before {
+  left: 0;
+  background:inherit;
+} 
+ .rSlide:after {
+  right: 0;
+  background:inherit;
+} 
+.userCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.allCont{
+  background: radial-gradient(circle, rgb(255,255,255,0) 35%, rgba(127, 255, 146)100%);
+  min-height: 100vh;
+  height: auto;
+}
+.aboveSlide{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: -15px;
+}
+.contPL{
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+  background: rgba(56, 60, 75, 0.093);
+  
+  border-radius: 35px;
+  border-image: linear-gradient(0.25turn, rgba(56,2,155,0), rgb(232, 228, 230), rgba(56,2,155,0));
+  border-image-slice: 1;
+  width:100%;
+  margin-bottom: 50px;
+}
+.audioLogo:hover{
+  cursor: pointer;
+}
+.midText p::before {
+	content: '──';
+	margin-right: 0.6em;
+	color: white;
+}
+.midText p::after {
+	content: '──';
+	margin-left: 0.6em;
+	color: white;
+}
+
+.midText p , .yourP{
+  color:white;
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.ReglogCont{
+    width:450px;
+    padding:20px;
+    min-height: 500px;
+    height: auto;
+    background: rgba(36, 171, 87, 0.242);
+    border: 2px solid rgba(6, 163, 116, 0.66);
+    border-radius: 50px;
+    backdrop-filter: blur(2px);
+    box-shadow: rgba(10, 231, 65, 0.905) 0px 22px 70px 4px;
+    transition: 0.4s;
+}
+.Reglog{
+    display: inline-grid;
+}
+.innerNav  button {
+  border:0px;
+  border-radius: 25px;
+  height: 40px;
+  width: 120px;
+  font-size: 20px;
+}
+.but{
+    padding:10px;
+    border:2px solid rgba(6, 163, 116, 0.863);
+    border-radius: 50px;
+    background-color:rgba(83, 230, 125, 0.8);
+    transition: 0.4s;
+}
+
+.hh,.stl , .hh4{
+    font-weight: 800;
+    color:white;
+    font-family: 'Mukta', sans-serif;
+}
+
+.sideNav{
+    width:320px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
+    min-height: 100%;
+    padding-top: 50px;
+    padding-right: 50px;
+    transition: all 1s;
+} 
+.sideNav.active{
+    left:0;
+}
+
+
+ul li , .sideDropLI{
+    list-style-type: none;
+    width:150px;
+  /* transition: all 0.7s; */
+
+   
+}
+/* .insideButtonActive{
+  transition: all 2s;
+  
+} */
+.insideButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    font-size: 18px;
+    /* transition: all 0.7s; */
+
+}
+ul li button{
+/* .ulli li button  */
+    background:transparent;
+    color:white;
+    text-decoration: none;
+    font-size:15px;
+    width:150px;
+    border:0px transparent;
+    display: block;
+    padding:10px;
+    border-radius: 6px;
+    transition: all 0.7s;
+}
+
+header{
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
+    color:white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
+    font-family: 'Rampart One', cursive;
+    padding-left: 2%;
+    padding-top:10px;
+    padding-right: 5%;
+    /* transition: all 5s; */
+}
+.headerButton{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+header button{
+    height: 40px;
+    width: 120px;
+    transition: all 0.5s;
+    font-size: 20px;
+    background-color: white;
+    border: 0px;
+    animation: myanimationBut 30s infinite;
+    border-radius: 25px;
+}
+
+.sideNavHead{
+    margin-bottom: 50px;
+    margin-top: -23px;
+}
+.sideNavp{
+    transition: all 0.5s;
+    font-family: 'Rampart One', cursive;
+    color:white;
+
+}
+
+.sideNavp:hover , header button:hover{
+
+    transition: all 0.5s;
+}
+
+.sideDropLI{
+  display: flex;
+  justify-content: space-between;
+     background:transparent;
+    color:white;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+    font-size:15px;
+    width:135px;
+    border:0px transparent;
+    padding:10px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.delLI{
+  background-color: #ccd1da57;
+  width: max-content;
+  border-radius: 10px;
+}
+.del{
+  width: max-content;
+  border-radius: 10px;
+  transition: 1s all ease-in-out;
+}
+
+.sideDrop{
+  margin:5px;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 200px;
+  width: 100%;
+
+}
+.sideDrop::-webkit-scrollbar { 
+  display: none; 
+}
+.insideButton:hover , .insideButton:active ,.sideDropLI:hover{
+    background-color: #ccd1da57;
+    transition: all 0.7s;
+}
+
+
+
+@keyframes myanimationBut {
+    0% {
+        color:  rgb(26, 188, 156);
+    }
+    25%{
+        color:  rgb(124, 59, 110);
+    }
+    50%{
+       color:  rgb(211, 84, 0);
+    }
+    75%{
+        color: rgb(152, 174, 96);
+    }
+    100% {
+      color: rgb(26, 188, 156);
+    }
+  }
+.stl{
+    font-size: 17px;
+}
+.but:hover{
+    border: 2px solid;
+    border-color:whitesmoke;
+    background-color: transparent;
+}
+.ReglogCont:hover {
+    background: rgba(107, 223, 153, 0.613);
+    border: 2px solid rgba(245, 241, 245, 0.968);
+    box-shadow: rgba(15, 225, 169, 0.874) 0px 22px 70px 4px;
+}
+.navv{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
+    font-family: 'Rampart One', cursive;
+    padding-left: 2%;
+    padding-top:10px;
+    padding-right: 5%;
+    transition: all 0.5s;
+}
+.navvForm{
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  top:0;
+  font-family: 'Rampart One', cursive;
+  padding-left: 2%;
+  padding-top:10px;
+  padding-right: 5%;
+  transition: all 0.5s;
+  border-bottom: 2px dotted rgba(9, 243, 95, 0.72);
+  box-shadow:  rgb(9, 243, 95) 0px 3px 5px -2px;
+ border-bottom-style: ridge;
+}
+.navv h1 , .navv button{
+  color: rgb(44, 101, 73);
+  transition: all 0.5s;
+}
+.navv button:hover , .logBut:hover{
+  cursor: pointer;
+  scale: 1.1;
+}
+.navv.active{
+    transition: all 0.5s;
+
+    border-bottom: 2px dotted rgba(9, 243, 95, 0.72);
+     box-shadow:  rgb(9, 243, 95) 0px 3px 5px -2px;
+    border-bottom-style: ridge;
+    background-color:white;
+}
+.lottie{
+    width: 140vw;
+}
+.slick-prev{
+  left: -50px;
+}
+.UnderNavCont{
+  display: flex;
+  margin-top: 100px;
+  margin-left: 100px;
+
+  margin-bottom: -100px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media  screen and (max-device-width:700px) {
+  
+    .UnderNavCont{
+      flex-direction: column;
+      margin-left: 0;
+    }
+    .lottie{
+      width: 100vw;
+      padding-bottom: 100px;
+    }
+    .Usection{
+      margin: 30px;
+    }
+   
+   
+     .Usection p{
+      font-size: 4vw !important;
+  }
+.Usection h1{
+    font-size: 6vw !important;
+    
+}
+.secondLine{
+  font-size: 5vw !important;
+}
+}
+.Usection {
+    width:auto;
+    color: rgb(255, 255, 255);
+  
+
+}
+.Usection p{
+    font-size: 2vw;
+    color: #27875b;
+}
+
+
+
+.Usection h1{
+  display: inline-block;
+    color:#53977ed1;
+    font-size: 4vw;
+    font-weight: 900;
+    
+}
+.secondLine{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3vw;
+  color: #27875b;
+  font-weight: 500;
+}
+
+.audioLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.play{
+  padding-top: 20px;
+}
+.someshit{
+  min-height: 100vh;
+  height: auto;
+  background-color: #f8fff2;
+  /* background: linear-gradient(  rgb(5, 237, 133,1) 0%, rgba(255,255,255,0) 100%); */
+}
+.exBox{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  align-items: center;
+}
+.firstBox , .secondBox{
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 60px;
+}
+@media  screen and (max-width:700px) {
+  .firstBox {
+    flex-direction: column;
+  }
+  .firstBox,.secondBox{
+    align-items: center;
+  }
+  .firstBoxinner p , .firstBoxinner h1, .secondBoxinner p, .secondBoxinner h1{
+    text-align: center;
+  }
+  .secondBox{
+    flex-direction: column-reverse;
+  }
+}
+.firstBoxinner , .secondBoxinner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+ .firstBoxinner p ,  .secondBoxinner p{
+  font-size: 20px;
+}
+.firstBoxinner h1 ,  .secondBoxinner h1{
+  font-weight: 500;
+}
+.cardSec{
+  min-height: 250px;
+  margin-left: 13px;
+  height: auto;
+  border-radius: 50px;
+  width:200px;
+  border: 0px solid transparent;
+  word-wrap: break-word;
+  transition: 1s ease-out;
+  background: rgba(66, 97, 73, 0.37);
+  position: relative;
+}
+
+.cardSec:hover{
+background: rgba(196, 205, 245, 0.505);
+transform: scale(0.9);
+
+}
+
+.cardSection{
+    min-height: 250px;
+    margin-left: 13px;
+    height: auto;
+    border-radius: 50px;
+    width:200px;
+    border: 0px solid transparent;
+    word-wrap: break-word;
+    transition: 1s ease-out;
+    background: rgba(196, 205, 245, 0.097);
+    position: relative;
+}
+
+.cardSection:hover{
+  background: rgba(196, 205, 245, 0.505);
+  transform: scale(0.9);
+
+}
+.cardSectionAct{
+  background: rgba(196, 205, 245, 0.505);
+
+}
+.cardSectionActive{
+
+  transition: 1s ease-in;
+  border:1px solid rgba(186, 216, 196, 0.775);
+}
+.cardActive{
+  background: rgba(98, 170, 118, 0.567);
+
+}
+
+.audioControls{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.middleSample:hover{
+    cursor: pointer;
+}
+#sample{
+  width: 100%;
+  aspect-ratio: 960/540;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.middleBG2{
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  row-gap: 100px;
+}
+@media screen and (max-width:850px) {
+    .middleBG h1{  
+      font-size: 7vw !important;
+    }
+}
+.middleBG {
+    background-image: url('../assets/images/footerES.svg');
+}
+.middleBG h3{
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+}
+
+.belowSamp{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.belowSamp button{
+  border:0px;
+  border-radius: 10px;
+  height: 40px;
+  width: 200px;
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+  background-color: #27875c66;
+}
+.belowSamp p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+@media (max-width:470px) {
+  .belowSamp p{  
+    font-size: 5vw !important;
+  }
+}
+.middleBG h1{
+  text-align: center;
+  color: #27875b;
+  font-size: 65px;
+  font-family: 'Poppins', sans-serif;
+
+}
+.middleBG h1::before {
+	content: '──';
+	margin-right: 0.6em;
+	color: #27875b;
+}
+.middleBG h1::after {
+	content: '──';
+	margin-left: 0.6em;
+	color: #27875b;
+}
+
+.middleSection{
+    display: grid;
+    column-gap: 150px;
+    row-gap: 40px;
+    grid-template-columns: repeat(auto-fit,15rem);
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+
+.dashmidContainer{
+    padding-top:40px;
+    transition: all 1s;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.dashmidContainer::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.wholeDash{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.dashCardContainer{
+
+    flex: 1;
+    display: grid !important;
+    column-gap: 150px;
+    grid-template-columns: repeat(auto-fit,15rem);
+    justify-content: center; 
+    align-items: center; 
+    row-gap: 50px;
+}
+.dashContainer{
+    width:100%;
+    height:100%;
+    animation: myanimation 30s infinite;
+    
+}
+@keyframes myanimation {
+    0% {background-color: rgb(26, 188, 156);}
+    25%{background-color: rgb(124, 59, 110);}
+    50%{background-color:rgb(211, 84, 0);}
+    75%{background-color: rgb(152, 174, 96);}
+    100% {background-color: rgb(26, 188, 156);}
+  }
+
+
+.modalBackground {
+    width: 100vw;
+    z-index: 1000;
+    height: 100vh;
+    background-color: rgba(200, 200, 200, 0.73);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+  
+  .modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .dashNav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+  .eveIdx{
+    animation: rgba(78, 107, 177, 0.398);
+  }
+  .oddIdx{
+    background-color: rgba(203, 108, 172, 0.404);
+  }
+  .noModalCover{
+    display: flex;
+  }
+  .playTable{
+    width: 100%;
+  }
+  .playTable tr{
+    border: 1px;
+  }
+ .playTable td {  
+    border: 1px solid black;  
+  }  
+  .body input {
+border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  text-align: center;
+  }
+  .body input::placeholder{
+    text-align: center;
+  }
+  
+  .modalContainer .body {
+    flex: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer .footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #saveBtn {
+    background-color: crimson;
+  }

@@ -1,3 +1,5 @@
+'use-client'
+
 import { motion } from 'framer-motion';
 import React, { useState , useRef , useEffect} from 'react'
 import {BsPlay,BsPause} from 'react-icons/bs'

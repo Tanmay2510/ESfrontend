@@ -1,3 +1,4 @@
+'use-client'
 import React,{useState,useEffect} from 'react'
 import Form from 'react-bootstrap/Form';
 import {motion } from 'framer-motion'

@@ -1,3 +1,5 @@
+'use-client'
+
 import React ,{useState}from 'react'
 import useAuth from '@/hook/useAuth';
 import { setModal } from '@/context/userAction';

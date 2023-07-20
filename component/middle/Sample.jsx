@@ -1,3 +1,4 @@
+'use-client'
 import { data } from '@/util/SData'
 import React, {  useState,useEffect } from 'react'
 import Sound from '../soundS/Sound'

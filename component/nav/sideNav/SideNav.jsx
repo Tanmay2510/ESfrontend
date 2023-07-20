@@ -1,3 +1,4 @@
+'use-client'
 import React,{useEffect, useState} from 'react'
 import {RiPlayListFill} from 'react-icons/ri'
 import 'react-toastify/dist/ReactToastify.css';

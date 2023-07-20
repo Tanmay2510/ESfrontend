@@ -1,3 +1,4 @@
+'use-client'
 import React, {  useState } from 'react'
 import Register from './register/Register';
 import {motion} from "framer-motion"

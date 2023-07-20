@@ -1,3 +1,4 @@
+'use-client'
 import useAuth from '@/hook/useAuth'
 import { hanldeLogout } from '@/manager/API';
 import { setNewUser,setHomeUser } from '@/context/userAction';

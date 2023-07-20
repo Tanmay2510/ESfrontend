@@ -1,3 +1,5 @@
+'use-client'
+
 import useAuth from '@/hook/useAuth';
 import { notSampledata } from '@/util/SData';
 import { AnimatePresence, motion } from 'framer-motion';

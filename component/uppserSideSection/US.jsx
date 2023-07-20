@@ -1,3 +1,4 @@
+'use-client'
 import React from 'react'
 import Textspan from '../Textspan'
 import { motion } from 'framer-motion'

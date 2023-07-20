@@ -1,3 +1,4 @@
+'use-client'
 import React from 'react'
 import secondBox from '@/assets/images/secondBox.svg'
 import firstBox from '@/assets/images/firstBox.svg'

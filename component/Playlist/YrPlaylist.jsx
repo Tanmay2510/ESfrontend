@@ -1,3 +1,4 @@
+'use-client'
 import useAuth from '@/hook/useAuth'
 import { getPlaylist } from '@/manager/API';
 import React, { useState  , useEffect} from 'react'

@@ -10,9 +10,9 @@ export default function middleware(req,res){
     : null
     let url = req.url;
     if(!cook && url.includes(`/users/`)){
-        return NextResponse.redirect("http://localhost:3000/");
+        return NextResponse.redirect("https://esback.vercel.app");
     }
-    else if((cook && url === "http://localhost:3000/") || (cook && url ==="http://localhost:3000/User")){
-        return NextResponse.redirect(`http://localhost:3000/users/${id}`)
+    else if((cook && url === "https://esback.vercel.app") || (cook && url ==="https://esback.vercel.app/User")){
+        return NextResponse.redirect(`https://esback.vercel.app/users/${id}`)
     }
 }

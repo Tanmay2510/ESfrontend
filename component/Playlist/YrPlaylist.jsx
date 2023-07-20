@@ -7,7 +7,6 @@ import Slider from "react-slick";
 import { motion } from 'framer-motion';
 import { ToastContainer, toast } from 'react-toastify';
 import {ic} from "../../util/playIcons/ic.js"
-import { AnimatePresence, MotionConfig } from 'framer-motion';
 function YrPlaylist() {
   
   var setting = {

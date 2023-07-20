@@ -1,6 +1,5 @@
 import Reglog from '@/component/Form/Reglog'
 import Nav from '@/component/nav/Nav';
-import useAuth from '@/hook/useAuth'
 import React from 'react'
 
 function User() {

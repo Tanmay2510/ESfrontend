@@ -1,21 +1,3 @@
-import snow from "../assets/sounds/snow_sound.mp3"
-import airplane from "../assets/sounds/airplane_sound.mp3"
-import birds from "../assets/sounds/birds_sound.mp3"
-import cafe from "../assets/sounds/cafe_sound.mp3"
-import fan from "../assets/sounds/fan_sound.mp3"
-import fire from "../assets/sounds/fire_sound.mp3"
-import forest from "../assets/sounds/forest_sound.mp3"
-import leaves from "../assets/sounds/leaves_sound.mp3"
-import night from "../assets/sounds/night_sound.mp3"
-import rain from "../assets/sounds/rain_sound.mp3"
-import river from "../assets/sounds/river_sound.mp3"
-import stream from "../assets/sounds/stream.mp3"
-import thunder from "../assets/sounds/thunder_sound.mp3"
-import train from "../assets/sounds/train_sound.mp3"
-import walk from "../assets/sounds/walk_sound.mp3"
-import waves from "../assets/sounds/waves_sound.mp3"
-import whiteNoise from "../assets/sounds/whitenoise_sound.mp3"
-import wind from "../assets/sounds/wind_sound.mp3"
 import { BsCloudSnow, BsFire,BsFan ,BsCloudRain} from 'react-icons/bs'
 import { MdForest,MdOutlineLocalCafe } from 'react-icons/md'
 import {RiThunderstormsFill} from 'react-icons/ri'
@@ -26,17 +8,17 @@ export const data = [
     {
         logo:<BsFire size={110}   color="white"/>,
         name:"Fire" ,
-        uri:fire
+        uri:"/sounds/fire_sound.mp3"
     },
     {
         logo:<BsCloudSnow size={110} color="white" />,
         name:"Snow" ,
-        uri:snow
+        uri:"/sounds/snow_sound.mp3"
     },
     {
         logo:<MdForest size={110} color="white"/>,
         name:"Forest" ,
-        uri:forest
+        uri:"/sounds/forest_sound.mp3"
     }
 ];
 
@@ -45,77 +27,77 @@ export const notSampledata = [
     {
         logo:<GiNestBirds size={110} color="white"/>,
         name:"Birds" ,
-        uri:birds
+        uri:"/sounds/birds_sound.mp3"
     },
     {
         logo:<GiCommercialAirplane size={110} color="white"/>,
         name:"Airplane" ,
-        uri:airplane
+        uri:"/sounds/airplane_sound.mp3"
     },
     {
         logo:<MdOutlineLocalCafe size={110} color="white"/>,
         name:"Cafe" ,
-        uri:cafe
+        uri:"/sounds/cafe_sound.mp3"
     },
     {
         logo:<BsFan size={110} color="white"/>,
         name:"Fan" ,
-        uri:fan
+        uri:"/sounds/fan_sound.mp3"
     },
     
     {
         logo:<GiThreeLeaves size={110} color="white"/>,
         name:"Leaves" ,
-        uri:leaves
+        uri:"/sounds/leaves_sound.mp3"
     },
     {
         logo:<GiNightSky size={110} color="white"/>,
         name:"Night" ,
-        uri:night
+        uri:"/sounds/night_sound.mp3"
     },
     {
         logo:<BsCloudRain size={110} color="white"/>,
         name:"Rain" ,
-        uri:rain
+        uri:"/sounds/rain_sound.mp3"
     },
     {
         logo:<GiRiver size={110} color="white"/>,
         name:"River" ,
-        uri:river
+        uri:"/sounds/river_sound.mp3"
     },
     {
         logo:<GiSplashyStream size={110} color="white"/>,
         name:"Stream" ,
-        uri:stream
+        uri:"/sounds/stream.mp3"
     },
     {
         logo:<RiThunderstormsFill size={110} color="white"/>,
         name:"Thunder" ,
-        uri:thunder
+        uri:"/sounds/thunder_sound.mp3"
     },
     {
         logo:<BiTrain size={110} color="white"/>,
         name:"Train" ,
-        uri:train
+        uri:"/sounds/train_sound.mp3"
     },
     {
         logo:<BiWalk size={110} color="white"/>,
         name:"Walking" ,
-        uri:walk
+        uri:"/sounds/walk_sound.mp3"
     },
     {
         logo:<GiWaves size={110} color="white"/>,
         name:"Waves" ,
-        uri:waves
+        uri:"/sounds/waves_sound.mp3"
     },
     {
         logo:<CgEditNoise size={110} color="white"/>,
         name:"White Noises" ,
-        uri:whiteNoise
+        uri:"/sounds/whitenoise_sound.mp3"
     },
     {
         logo:<BiWind size={110} color="white"/>,
         name:"Wind" ,
-        uri:wind
+        uri:"/sounds/wind_sound.mp3"
     }
 ]

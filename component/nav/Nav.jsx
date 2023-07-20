@@ -3,7 +3,7 @@ import useAuth from '@/hook/useAuth'
 import { hanldeLogout } from '@/manager/API';
 import { setNewUser,setHomeUser } from '@/context/userAction';
 import React, { useState ,useEffect} from 'react'
-import logo from '../../assets/images/logo.png'
+// import logo from '../../assets/images/logo.png'
 function Nav(props) {
   const [navB,setNavB] = useState(false);
   const {userDispatch} = useAuth();
@@ -32,7 +32,7 @@ function Nav(props) {
       <>
       <nav className="navvForm ">
         <h1>ESION</h1>
-        <img src={logo.src} style={{width:"5%"}}></img>
+        <img src={"/images/logo.png"} style={{width:"5%"}}></img>
         <div className='innerNav'>
 <button  onClick={handleUserHome}>Home</button>
        
@@ -59,7 +59,7 @@ function Nav(props) {
       <>
       <nav className={navB ? "navv active" : "navv "}>
         <h1>ESION</h1>
-        <img src={logo.src} style={{width:"5%"}}></img>
+        <img src="/images/logo.png" style={{width:"5%"}}></img>
         <div className='innerNav'>
 <button  onClick={hanldeNewUser}>Start</button>
        

@@ -2,9 +2,8 @@ import { Inter } from 'next/font/google'
 import Nav from '@/component/nav/Nav'
 import US from '@/component/uppserSideSection/US'
 import Sample from '@/component/middle/Sample'
-import land from '@/assets/lottie/land.json'
 import Lottie from "lottie-react"
-
+import land from "@/assets/lottie/land.json"
 import { motion } from 'framer-motion'
 import Examp from '@/component/example/Examp'
 const inter = Inter({ subsets: ['latin'] })

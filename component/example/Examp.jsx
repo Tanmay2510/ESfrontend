@@ -1,7 +1,7 @@
 'use-client'
 import React from 'react'
-import secondBox from '@/assets/images/secondBox.svg'
-import firstBox from '@/assets/images/firstBox.svg'
+// import secondBox from '/images/secondBox.svg'
+// import firstBox from '/images/firstBox.svg'
 import Reveal from '../reveal'
 
 function Examp() {
@@ -9,7 +9,7 @@ function Examp() {
     <div className='exBox'>
     <Reveal>
         <div className='firstBox'>
-        <img src={firstBox.src} style={{width:"40%"}}></img>
+        <img src={"/images/firstBox.svg"} style={{width:"40%"}}></img>
         <div className='firstBoxinner'>
         <h1>Plug it in and Chill</h1>
         <p>
@@ -28,7 +28,7 @@ function Examp() {
          You can listen to different combinations and if you like make a playlist!!
         </p>
         </div>
-        <img src={secondBox.src} style={{width:"40%"}}></img>
+        <img src={"/images/secondBox.svg"} style={{width:"40%"}}></img>
 
         </div>   
       </Reveal>

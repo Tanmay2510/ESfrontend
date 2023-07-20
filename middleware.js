@@ -10,9 +10,9 @@ export default function middleware(req,res){
     : null
     let url = req.url;
     if(!cook && url.includes(`/users/`)){
-        return NextResponse.redirect("https://esback.vercel.app");
+        return NextResponse.redirect("https://esionn.netlify.app");
     }
-    else if((cook && url === "https://esback.vercel.app") || (cook && url ==="https://esback.vercel.app/User")){
-        return NextResponse.redirect(`https://esback.vercel.app/users/${id}`)
+    else if((cook && url === "https://esionn.netlify.app") || (cook && url ==="https://esionn.netlify.app/User")){
+        return NextResponse.redirect(`https://esionn.netlify.app/users/${id}`)
     }
 }

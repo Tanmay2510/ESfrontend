@@ -12,7 +12,7 @@ export default function middleware(req,res){
     if(!cook && url.includes(`/users/`)){
         return NextResponse.redirect("https://esionn.netlify.app");
     }
-    else if((cook && url === "https://esionn.netlify.app") || (cook && url ==="https:/esionn.netlify.app/User")){
+    else if((cook && url === "https://esionn.netlify.app") || (cook && url ==="https://esionn.netlify.app/User")){
         return NextResponse.redirect(`https://esionn.netlify.app/users/${id}`)
     }
 }

@@ -5,6 +5,7 @@ export default function middleware(req,res){
     req.cookies.get('sessionId').value
     : null
     let locId = localStorage.getItem('userId')
+    console.log(req)
     let id = 
     req.cookies.get('userId') ?
     req.cookies.get('userId').value

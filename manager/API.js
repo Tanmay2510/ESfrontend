@@ -53,6 +53,7 @@ export const hanldeLogout = (dispatch) =>{
 export const handlelogin = async (user,dispatch)=>{
     const r = await axios.post(BASE_URL+"/login",user,{withCredentials:true})
     .then( res => {
+        console.log(res)
         dispatch(setLogin(res.data))
 
     })

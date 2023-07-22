@@ -22,11 +22,15 @@ function Sample() {
   const hanldeNewUser = () =>{
     setNewUser();
   }
- 
+  const variants={
+    hidden: { opacity: 0, y: -75 },
+    visible: { opacity: 1, y: 0 },
+  }
   return (
     
     <div className='middleBG' id="sample">
     <Reveal 
+    variants={variants }
     >
     <div className='middleBG2'>
     <h1 >Get a sneak peek</h1>

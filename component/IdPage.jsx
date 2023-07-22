@@ -8,6 +8,8 @@ import YrPlaylist from '@/component/Playlist/YrPlaylist'
 import { AnimatePresence ,motion} from 'framer-motion'
 import useRouter from "next/router"
 import { check } from '@/manager/API';
+import Load from '@/util/Load/Load'
+
 
 export default function IdPage() {
 const router = useRouter;
@@ -91,9 +93,8 @@ const router = useRouter;
       )
     }
   }else{
-    console.log(exists)
     return(
-      <h1>Loading</h1>
+      <Load />
     )
   }
 

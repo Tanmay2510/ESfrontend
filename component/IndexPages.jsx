@@ -9,9 +9,8 @@ import { motion } from 'framer-motion'
 import Examp from '@/component/example/Examp'
 import { useEffect ,useState} from 'react'
 import { check } from '@/manager/API'
-import { NextResponse } from 'next/server'
 import useRouter from "next/router"
-
+import Load from '@/util/Load/Load'
 export default function IndexPages() {
   const router = useRouter;
 
@@ -70,7 +69,7 @@ export default function IndexPages() {
     }
   }else{
     return(
-      <h1>Loading</h1>
+      <Load />
     )
   }
 

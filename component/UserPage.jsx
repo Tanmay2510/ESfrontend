@@ -4,6 +4,7 @@ import useAuth from '@/hook/useAuth';
 import { check } from '@/manager/API';
 import React, { useEffect, useState } from 'react'
 import useRouter from "next/router"
+import Load from '@/util/Load/Load'
 
 export default function UserPage() {
 const router = useRouter;
@@ -40,7 +41,7 @@ if(rend){
   }
 }else{
   return(
-    <h1>Loading</h1>
+    <Load />
   )
 }
 

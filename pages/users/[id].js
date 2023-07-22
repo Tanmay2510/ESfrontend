@@ -1,4 +1,4 @@
-import IdPage from '@/component/idPage'
+import IdPage from '@/component/IdPage'
 import React from 'react'
 export default function DynamicPage() {
 

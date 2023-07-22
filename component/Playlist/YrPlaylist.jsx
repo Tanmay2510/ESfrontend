@@ -6,7 +6,7 @@ import PlayListSound from '../soundS/PlayListSound';
 import Slider from "react-slick";
 import { motion } from 'framer-motion';
 import { ToastContainer, toast } from 'react-toastify';
-import {ic} from "../../util/playIcons/ic.js"
+import {ic} from "@/util/playIcons/ic.js"
 function YrPlaylist() {
   
   var setting = {

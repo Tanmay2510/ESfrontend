@@ -10,12 +10,11 @@ export default function middleware(req,res){
     req.cookies.get('userId').value
     : null
     let url = req.url;
-    // console.log(typeof(res.headers.get('Set-Cookie'))); // Will output `referer` header value
 
-    // if(!cook && url.includes(`/users/`)){
-    //     return NextResponse.redirect("https://esionn.netlify.app");
-    // }
-    // else if((cook && url === "https://esionn.netlify.app") || (cook && url ==="https://esionn.netlify.app/User")){
-    //     return NextResponse.redirect(`https://esionn.netlify.app/users/${id}`)
-    // }
+    if(!cook && url.includes(`/users/`)){
+        return NextResponse.redirect("https://esionn.netlify.app");
+    }
+    else if((cook && url === "https://esionn.netlify.app") || (cook && url ==="https://esionn.netlify.app/User")){
+        return NextResponse.redirect(`https://esionn.netlify.app/users/${id}`)
+    }
 }

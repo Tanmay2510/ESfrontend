@@ -16,7 +16,8 @@ const initialState ={
     deletePlay:false,
     thePlaylists:[],
     dataDeleted:null,
-    rend:null
+    rend:null,
+    exist:null
 }
 const userStoreReducer = (state, action) => {
     try {

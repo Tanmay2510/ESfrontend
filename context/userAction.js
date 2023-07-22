@@ -135,6 +135,14 @@ export const setPlaylist = (data)=>{
             }
         }
 }
+export const setCheck = (data)=>{
+    return(state) =>{
+        return {
+            ...state,
+            exists:data.UserExists
+        }
+    }
+}
 
 export const setLogin = (data) =>{
     if(data.login){

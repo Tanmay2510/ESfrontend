@@ -11,7 +11,7 @@ export default function middleware(req,res){
     : null
     let url = req.url;
     // console.log(typeof(res.headers.get('Set-Cookie'))); // Will output `referer` header value
-    console.log(req.headers.get('sess'))
+
     // if(!cook && url.includes(`/users/`)){
     //     return NextResponse.redirect("https://esionn.netlify.app");
     // }

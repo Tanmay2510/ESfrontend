@@ -4,7 +4,6 @@ export default function middleware(req,res){
     req.cookies.get('sessionId') ?
     req.cookies.get('sessionId').value
     : null
-    console.log(req.headers.get('referer'))
     let id = 
     req.cookies.get('userId') ?
     req.cookies.get('userId').value

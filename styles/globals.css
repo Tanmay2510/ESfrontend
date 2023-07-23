@@ -108,6 +108,12 @@ body{
     box-shadow: rgba(10, 231, 65, 0.905) 0px 22px 70px 4px;
     transition: 0.4s;
 }
+@media all and (max-width:510px){
+  .ReglogCont{
+    width: 85vw;
+  }
+ 
+}
 .Reglog{
     display: inline-grid;
 }
@@ -311,6 +317,7 @@ header button{
     font-family: 'Rampart One', cursive;
     padding-left: 2%;
     padding-top:10px;
+    padding-bottom: 5px;
     padding-right: 5%;
     transition: all 0.5s;
 }
@@ -324,6 +331,7 @@ header button{
   font-family: 'Rampart One', cursive;
   padding-left: 2%;
   padding-top:10px;
+  padding-bottom: 10px;
   padding-right: 5%;
   transition: all 0.5s;
   border-bottom: 2px dotted rgba(9, 243, 95, 0.72);
@@ -346,6 +354,17 @@ header button{
     border-bottom-style: ridge;
     background-color:white;
 }
+@media all and (max-width:450px){
+  .navv h1 , .navvForm h1{
+    font-size: 5vw;
+    margin-bottom: 0;
+  }
+  .navv button , .navvForm button{
+    width: 23vw;
+    font-size: 4vw;
+    height: 7vw;
+  }
+}
 .lottie{
     width: 140vw;
 }
@@ -362,7 +381,7 @@ header button{
   align-items: center;
 }
 
-@media  screen and (max-device-width:700px) {
+@media  all and (max-device-width:700px) {
   
     .UnderNavCont{
       flex-direction: column;
@@ -443,7 +462,7 @@ header button{
   justify-content: space-between;
   column-gap: 60px;
 }
-@media  screen and (max-width:700px) {
+@media  all and (max-width:700px) {
   .firstBox {
     flex-direction: column;
   }
@@ -542,7 +561,7 @@ transform: scale(0.9);
   padding-top: 80px;
   row-gap: 100px;
 }
-@media screen and (max-width:850px) {
+@media all and (max-width:850px) {
     .middleBG h1{  
       font-size: 7vw !important;
     }
@@ -578,7 +597,7 @@ transform: scale(0.9);
   color: #ffffff;
   margin-bottom: 10px;
 }
-@media (max-width:470px) {
+@media all and (max-width:470px) {
   .belowSamp p{  
     font-size: 5vw !important;
   }

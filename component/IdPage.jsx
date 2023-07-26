@@ -8,14 +8,16 @@ import YrPlaylist from '@/component/Playlist/YrPlaylist'
 import { AnimatePresence ,motion} from 'framer-motion'
 import useRouter from "next/router"
 import { check } from '@/manager/API';
+import Load from '@/util/Load/Load'
+
 
 export default function IdPage() {
 const router = useRouter;
 
   const {userDispatch,sideNavClicked,yourPlaylistClicked,exists} = useAuth();
   const [ii,setii] = useState('')
-  const [hamState,setHamState]= useState(false)
   const [rend,setRend] = useState(false)
+  const [hamState,setHamState]= useState(false)
   useEffect(()=>{
     const a = (async()=>{
   const i = localStorage.getItem('userId');
@@ -26,14 +28,12 @@ const router = useRouter;
     })
     a()
   },[])
-   
   if(rend){
     if(!exists){
       router.replace('/')
     }else{
       return (
         <div className="dashContainer">
-      
         <AnimatePresence>
         {sideNavClicked && 
           <motion.div
@@ -47,7 +47,9 @@ const router = useRouter;
     
         }
         </AnimatePresence>
+    
         <div className='noModalCover'>
+        <SideNav />
         <div className='dashNav'>
         <Nav 
         logout = {true}
@@ -84,22 +86,19 @@ const router = useRouter;
     
          <motion.div
          >
-        <Dash
-        />
+        <Dash />
         </motion.div>
     
         </div>
         </div>
-
         </div>
-    
         </div>
         </div>
       )
     }
   }else{
     return(
-      <h1>Loading</h1>
+      <Load />
     )
   }
 

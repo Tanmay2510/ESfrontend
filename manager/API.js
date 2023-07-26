@@ -1,5 +1,5 @@
 import axios from "axios";
-import { setLogin, setRegister , setLogout,isSave,setPlaylistClient,setDelete,setCheck} from "../context/userAction";
+import { setLogin, setRegister , setLogout,isSave,setPlaylistClient,setDelete,setCheck,setHamState} from "../context/userAction";
 
 const BASE_URL = "https://esback-zcuw.onrender.com";
 
@@ -10,7 +10,9 @@ export const handleregister = async (user,dispatch) =>{
             })
 
 }
-
+export const handleHamState = (data,dispatch)=>{
+    dispatch(setHamState(data))
+}
 export const getPlaylist = async (dispatch)=>{
     const gid =  localStorage.getItem('userId')
     const r = await axios.get(BASE_URL+"/playList/"+gid,{withCrdentials:true})

@@ -1,5 +1,15 @@
 import useRouter from "next/router"
 let router = useRouter;
+export const setHamState = (data)=>{
+
+    return (state)=>{
+        return{
+            ...state,
+            isHam:data
+
+        }
+    }
+}
 export const setRegister = (data) =>{
     if(data.login){
         router.push("/users/"+data.id)

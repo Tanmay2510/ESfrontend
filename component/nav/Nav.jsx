@@ -41,7 +41,7 @@ useEffect(()=>{
     setOpen(true)
   }else{
     setOpen(false)
-shFun(false)
+// shFun(false)
 
   }
 },[width])

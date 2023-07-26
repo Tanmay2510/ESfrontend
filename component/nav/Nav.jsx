@@ -2,7 +2,6 @@
 import useAuth from '@/hook/useAuth'
 import { handleHamState, hanldeLogout } from '@/manager/API';
 import { setNewUser,setHomeUser } from '@/context/userAction';
-import logo from '../../assets/images/logo.png'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import React,{useEffect, useState} from 'react'
 import 'react-toastify/dist/ReactToastify.css';

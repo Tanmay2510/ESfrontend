@@ -5,7 +5,7 @@ import React,{useEffect, useState} from 'react'
 import useAuth from '@/hook/useAuth'
 import SideDrop from '../sideNav/sideDrop';
 import { motion , AnimatePresence} from 'framer-motion';
-import { handleDel } from '@/manager/API';
+import { handleDel, hanldeLogout } from '@/manager/API';
 import { ToastContainer, toast } from 'react-toastify';
 export default function Ham() {
   const {userDispatch,yourPlaylistClicked,sideNavClicked,deletePlaylistClicked,thePlaylists,isHam} = useAuth();
@@ -20,7 +20,9 @@ export default function Ham() {
 
      }
   }
-
+  const log = () =>{
+    hanldeLogout(userDispatch);
+  }
   useEffect(()=>{
     if(isCK.length !==0 && isDel === false){
       handleDel(userDispatch,isCK);
@@ -95,6 +97,8 @@ className='ulli'>
 className='hamLI'
 ><button className='indBut' onClick={handleClick("yourPlaylistClicked")}>Your Playlist<MdOutlineLibraryMusic/></button></li>
 </ul>
+    <button  onClick={log} className="logBut">Logout</button>
+
 </div>
    
   )

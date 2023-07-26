@@ -7,7 +7,7 @@ import React,{useEffect, useState} from 'react'
 import 'react-toastify/dist/ReactToastify.css';
 import Ham from './Ham/Ham.jsx';
 function Nav({logout,shFun,hFun,where}) {
-const {userDispatch,yourPlaylistClicked,sideNavClicked,deletePlaylistClicked,thePlaylists} = useAuth();
+const {userDispatch} = useAuth();
 
   const [navB,setNavB] = useState(false);
 const [opened, setOpen] = useState(false);
@@ -44,14 +44,11 @@ useEffect(()=>{
   }
 },[width])
 const handleHam = ()=>{
-//  sHState(false)
 shFun(!hFun)
 }
 useEffect(()=>{
   handleHamState(hFun,userDispatch);
 },[hFun])
-// console.log(hamState)
-      // {navB ? "navv active" : "navv "}
   if(where==="form"){
     return(
       <>

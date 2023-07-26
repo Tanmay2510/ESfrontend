@@ -41,6 +41,8 @@ useEffect(()=>{
     setOpen(true)
   }else{
     setOpen(false)
+shFun(false)
+
   }
 },[width])
 const handleHam = ()=>{

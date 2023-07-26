@@ -5,6 +5,7 @@ import Sound from '../soundS/Sound'
 import useAuth from '@/hook/useAuth'
 import { setPlaylist } from '@/context/userAction';
 import { ToastContainer, toast } from 'react-toastify';
+import { handleHamState } from '@/manager/API'
 
 
 function Dash() {
@@ -12,6 +13,8 @@ function Dash() {
   const [currentSoundIndex, setCurrentSoundIndex] = useState([])
   const [playingSounds, setPlayingSounds] = useState({})
   const [phir,setphir] = useState(false)
+const [width, setWidth] = useState(window.innerWidth);
+
   useEffect(() => {
     setPlayingSounds(
       currentSoundIndex.reduce(
@@ -31,9 +34,19 @@ function Dash() {
 
 
   },[sideNavClicked,playingSounds])
+  const breakpoint = 560;
+useEffect(() => {
+  window.addEventListener("resize", () => setWidth(window.innerWidth));
+}, []);
+useEffect(()=>{
+  if(width>breakpoint){
+      handleHamState(false,userDispatch);
+  }
+},[width])
   useEffect(()=>{
     userDispatch(setPlaylist(playingSounds)); 
   },[playingSounds]) // do some condition only on modal save click
+
   return (
     <div className={`${isHam ? "wholeDash zi": "wholeDash"}`}>
 

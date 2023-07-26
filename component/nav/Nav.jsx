@@ -58,7 +58,7 @@ useEffect(()=>{
       <>
       <nav className="navvForm ">
         <h1>ESION</h1>
-        <img src={logo.src} style={{width:"5%"}}></img>
+        <img src={"/images/logo.png"} style={{width:"5%"}}></img>
         <div className='innerNav'>
 <button  onClick={handleUserHome}>Home</button>
         

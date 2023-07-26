@@ -49,7 +49,6 @@ const router = useRouter;
         </AnimatePresence>
     
         <div className='noModalCover'>
-        <SideNav />
         <div className='dashNav'>
         <Nav 
         logout = {true}

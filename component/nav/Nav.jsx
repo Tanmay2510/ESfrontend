@@ -92,7 +92,7 @@ useEffect(()=>{
          
         :
         <>
-        <img src={logo.src} style={{width:"5%"}}></img>
+        <img src={"/images/logo.png"} style={{width:"5%"}}></img>
     <button  onClick={log} className="logBut">Logout</button>
     </>
 
@@ -107,7 +107,7 @@ useEffect(()=>{
       <>
       <nav className={navB ? "navv active" : "navv "}>
         <h1>ESION</h1>
-        <img src={logo.src} style={{width:"5%"}}></img>
+        <img src={"/images/logo.png"} style={{width:"5%"}}></img>
         <div className='innerNav'>
 <button  onClick={hanldeNewUser}>Start</button>
        

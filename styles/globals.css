@@ -657,6 +657,15 @@ transform: scale(0.9);
   padding-top: 80px;
   row-gap: 100px;
 }
+.cen{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  background: radial-gradient(circle, rgb(255,255,255,0) 35%, rgba(42, 182, 63, 0.392)100%);
+
+}
 @media screen and (max-width:850px) {
     .middleBG h1{  
       font-size: 7vw !important;

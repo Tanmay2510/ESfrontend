@@ -34,7 +34,7 @@ function YrPlaylist() {
  
     const [isyps,setyps] = useState(false)
     const [show,setShow] = useState(false)
-    const {userDispatch,yourPlaylistClicked,thePlaylists,rend,yps} = useAuth();
+    const {userDispatch,yourPlaylistClicked,thePlaylists,rend,yps,isHam} = useAuth();
     useEffect(()=>{
       const a = (async()=>{
         await getPlaylist(userDispatch)
@@ -70,7 +70,7 @@ if(!show){
 
   return (
     <motion.div 
-    className='contPL'>
+    className={`${isHam ? "contPL zi": "contPL"}`}>
     <div className='yourP hrp'>
     <p>Your Playlists: </p>
     </div>

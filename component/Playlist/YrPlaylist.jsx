@@ -70,7 +70,7 @@ if(!show){
 
   return (
     <motion.div 
-    className={`${isHam ? "contPL zi": "contPL"}`}>
+    className="contPL">
     <div className='yourP hrp'>
     <p>Your Playlists: </p>
     </div>
@@ -78,7 +78,7 @@ if(!show){
      <div className='aboveSlide'>
   
 <ToastContainer />
-    <Slider {...setting} className='rSlide'>
+    <Slider {...setting} className={`${isHam ? "rslide zi": "rslide"}`}>
 
     {
       thePlaylists.map((el,i)=>{

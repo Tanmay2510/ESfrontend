@@ -78,7 +78,7 @@ if(!show){
      <div className='aboveSlide'>
   
 <ToastContainer />
-    <Slider {...setting} className='rSlide'>
+    <Slider {...setting} className={`${isHam ? "rSlide zi": "rSlide"}`}>
 
     {
       thePlaylists.map((el,i)=>{

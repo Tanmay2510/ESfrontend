@@ -97,7 +97,7 @@ className='ulli'>
 className='hamLI'
 ><button className='indBut' onClick={handleClick("yourPlaylistClicked")}>Your Playlist<MdOutlineLibraryMusic/></button></li>
 </ul>
-    <button  onClick={log} className="logBut">Logout</button>
+    <button  onClick={log} className="logButt">Logout</button>
 
 </div>
    

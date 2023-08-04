@@ -259,6 +259,16 @@ ul li button{
     animation: myanimationBut 30s infinite;
     border-radius: 25px;
 }
+.logButt{
+  height: 40px;
+  width: 120px;
+  transition: all 0.5s;
+  font-size: 20px;
+  background-color: white;
+  border: 0px;
+  border-radius: 25px;
+  margin-top: 50px;
+}
 
 .sideNavHead{
     margin-bottom: 50px;
@@ -310,7 +320,7 @@ ul li button{
   height: auto;
   margin-top: 55px;
   left: 0;
-  background-color: black;
+  background-color: currentColor;
  
 }
 .zi{
@@ -444,7 +454,7 @@ ul li button{
   color: rgb(44, 101, 73);
   transition: all 0.5s;
 }
-.navv button:hover , .logBut:hover , .navvForm button:hover{
+.navv button:hover , .logBut:hover ,.logButt:hover , .navvForm button:hover{
   cursor: pointer;
   scale: 1.1;
 }
